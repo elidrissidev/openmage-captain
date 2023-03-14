@@ -1,5 +1,7 @@
 FROM httpd:2.4-alpine
 
+COPY httpd-vhosts.conf php-fpm.conf /usr/local/apache2/conf/extra/
+
 RUN sed -i \
 		-e 's/^#\(Include .*vhosts.conf\)/\1/' \
 		-e 's/^#\(LoadModule .*proxy.so\)/\1/' \
