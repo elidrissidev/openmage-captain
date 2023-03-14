@@ -1,0 +1,20 @@
+{
+    "name": "elidrissidev/openmage-docker",
+    "description": "Docker configuration generator for OpenMage development environments.",
+    "keywords": ["openmage", "magento", "docker"],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenMage\\Docker\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

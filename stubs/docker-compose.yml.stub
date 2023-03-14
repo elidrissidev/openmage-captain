@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  www:
+    image: om-8.2/www
+    build:
+      context: ./vendor/elidrissidev/openmage-docker/runtimes/shared/httpd
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - .:/usr/local/apache2/htdocs
+  php:
+    image: om-8.2/php
+    build:
+      context: ./vendor/elidrissidev/openmage-docker/runtimes/8.2
+      dockerfile: Dockerfile
+    ports:
+      - 9000:9000
+    volumes:
+      - .:/usr/local/apache2/htdocs
+
+networks:
+  om:
+    driver: bridge
