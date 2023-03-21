@@ -1,5 +1,5 @@
 {
-    "name": "elidrissidev/openmage-docker",
+    "name": "elidrissidev/openmage-captain",
     "description": "Docker configuration generator for OpenMage development environments.",
     "keywords": ["openmage", "magento", "docker"],
     "license": "MIT",
@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "OpenMage\\Docker\\": "src/"
+            "OpenMage\\Captain\\": "src/"
         }
     },
     "config": {

@@ -1,4 +1,4 @@
-# openmage-docker (WIP)
+# OpenMage Captain (WIP)
 
 Docker configuration generator for OpenMage development environments.
 
