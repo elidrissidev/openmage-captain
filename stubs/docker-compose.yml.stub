@@ -4,7 +4,7 @@ services:
   www:
     image: om-8.2/www
     build:
-      context: ./vendor/elidrissidev/openmage-docker/runtimes/shared/httpd
+      context: ./vendor/elidrissidev/openmage-captain/runtimes/shared/httpd
       dockerfile: Dockerfile
     ports:
       - 80:80
@@ -13,7 +13,7 @@ services:
   php:
     image: om-8.2/php
     build:
-      context: ./vendor/elidrissidev/openmage-docker/runtimes/8.2
+      context: ./vendor/elidrissidev/openmage-captain/runtimes/8.2
       dockerfile: Dockerfile
     ports:
       - 9000:9000
