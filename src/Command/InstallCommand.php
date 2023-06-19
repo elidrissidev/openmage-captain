@@ -2,7 +2,7 @@
 
 namespace OpenMage\Captain\Command;
 
-use OpenMage\Captain\Trait\InteractsWithCompose;
+use OpenMage\Captain\Traits\InteractsWithCompose;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

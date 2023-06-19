@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenMage\Captain\Trait;
+namespace OpenMage\Captain\Traits;
 
 trait InteractsWithCompose
 {
@@ -9,7 +9,7 @@ trait InteractsWithCompose
      *
      * @var array
      */
-    protected const ADDITIONAL_SERVICES = [
+    protected $supportedServices = [
         'mysql',
         'mariadb',
         'redis',
